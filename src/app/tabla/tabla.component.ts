@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabla.component.css']
 })
 export class TablaComponent implements OnInit {
-  constructor() {
+  constructor() {this.myTable();
   }
   ngOnInit(): void {
   }
@@ -69,4 +71,3 @@ export class TablaComponent implements OnInit {
   return myTable;
 }
 }
-
