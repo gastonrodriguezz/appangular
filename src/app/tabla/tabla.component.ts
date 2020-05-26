@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabla.component.css']
 })
 export class TablaComponent implements OnInit {
-  constructor() {this.myTable();
+  constructor() {
   }
   ngOnInit(): void {
   }
@@ -69,5 +69,8 @@ export class TablaComponent implements OnInit {
   myTable += '<td>' + totalTotal + '</td></tr>';
   myTable += '</table>';
   return myTable;
+}
+  generarTabla(){
+    a = document.createElement('script');
 }
 }
