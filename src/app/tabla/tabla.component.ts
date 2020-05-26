@@ -50,7 +50,7 @@ export class TablaComponent implements OnInit {
   myTable += '<th>Santa Fe</th>';
   myTable += '<th>Paraná</th>';
   myTable += '<th>Santo Tomé</th>';
-  myTable += '<th>Total</th></tr></thead>';
+  myTable += '<th>Total</th></tr></thead><tbody>';
   for (let i = 0; i < months.length; i++) {
         totalMes = sf[i] + pa[i] + st[i];
         myTable += '<tr><td>' + months[i] + '</td>';
@@ -63,7 +63,7 @@ export class TablaComponent implements OnInit {
         totalSt = totalSt + st[i];
         totalTotal = totalTotal + totalMes;
     }
-  myTable += '<tbody><tr><td style=\'font-size:18px;font-weight:lighter;\'>Total</td>';
+  myTable += '<tr><td style=\'font-size:18px;font-weight:lighter;\'>Total</td>';
   myTable += '<td>' + totalSf + '</td>';
   myTable += '<td>' + totalPa + '</td>';
   myTable += '<td>' + totalSt + '</td>';
