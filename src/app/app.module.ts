@@ -8,6 +8,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
 import { TablaComponent } from './tabla/tabla.component';
+import { ListaSucursalComponent } from './lista-sucursal/lista-sucursal.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TablaComponent } from './tabla/tabla.component';
     BodyComponent,
     FooterComponent,
     ListadoClientesComponent,
-    TablaComponent
+    TablaComponent,
+    ListaSucursalComponent
   ],
   imports: [
     BrowserModule,
