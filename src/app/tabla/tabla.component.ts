@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabla.component.css']
 })
 export class TablaComponent implements OnInit {
+  a = this.myTable();
   constructor() {
   }
   ngOnInit(): void {
@@ -45,11 +46,11 @@ export class TablaComponent implements OnInit {
                             'Octubre',
                             'Noviembre',
                             'Diciembre'];
-  let myTable = '<table><tr><thead><th>Mes</th>';
+  let myTable = '<table><thead><tr><th>Mes</th>';
   myTable += '<th>Santa Fe</th>';
   myTable += '<th>Paraná</th>';
   myTable += '<th>Santo Tomé</th>';
-  myTable += '<th>Total</th></thead></tr>';
+  myTable += '<th>Total</th></tr></thead>';
   for (let i = 0; i < months.length; i++) {
         totalMes = sf[i] + pa[i] + st[i];
         myTable += '<tr><td>' + months[i] + '</td>';
@@ -62,15 +63,12 @@ export class TablaComponent implements OnInit {
         totalSt = totalSt + st[i];
         totalTotal = totalTotal + totalMes;
     }
-  myTable += '<tr><td style=\'font-size:18px;font-weight:lighter;\'>Total</td>';
+  myTable += '<tbody><tr><td style=\'font-size:18px;font-weight:lighter;\'>Total</td>';
   myTable += '<td>' + totalSf + '</td>';
   myTable += '<td>' + totalPa + '</td>';
   myTable += '<td>' + totalSt + '</td>';
-  myTable += '<td>' + totalTotal + '</td></tr>';
+  myTable += '<td>' + totalTotal + '</td></tr></tbody>';
   myTable += '</table>';
   return myTable;
-}
-  generarTabla(){
-    a = document.createElement('script');
 }
 }
