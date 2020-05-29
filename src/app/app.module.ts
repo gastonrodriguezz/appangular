@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
 import { TablaComponent } from './tabla/tabla.component';
 import { ListaSucursalComponent } from './lista-sucursal/lista-sucursal.component';
+import { ArbolNavidadComponent } from './arbol-navidad/arbol-navidad.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { ListaSucursalComponent } from './lista-sucursal/lista-sucursal.componen
     FooterComponent,
     ListadoClientesComponent,
     TablaComponent,
-    ListaSucursalComponent
+    ListaSucursalComponent,
+    ArbolNavidadComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
