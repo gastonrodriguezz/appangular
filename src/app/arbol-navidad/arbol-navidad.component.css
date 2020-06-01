@@ -12,11 +12,6 @@
   0% { fill: #6a0c15; }
   100% { fill: #ec5565; }
 } div {
-    width: auto;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #C2C2C2;
-    display: flex;
+    width: min-content;
     
 }  
