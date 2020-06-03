@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
+import { ListadoClientesComponent } from './body/listado-clientes/listado-clientes.component';
 import { TablaComponent } from './tabla/tabla.component';
-import { ListaSucursalComponent } from './lista-sucursal/lista-sucursal.component';
-import { ArbolNavidadComponent } from './arbol-navidad/arbol-navidad.component';
+import { ListaSucursalComponent } from './body/lista-sucursal/lista-sucursal.component';
+import { ArbolNavidadComponent } from './body/arbol-navidad/arbol-navidad.component';
 
 @NgModule({
   declarations: [
