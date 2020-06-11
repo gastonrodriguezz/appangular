@@ -9,13 +9,9 @@ table {
     
   }
   
-  html{
-      background: rgb(70,90,200);
-      background: linear-gradient(90deg, rgba(70,90,200,1) 0%, rgba(185,89,188,1) 100%);
-  }
   h2{
       font-family: 'Open Sans';
-      text-align: center;
+      text-align: left;
       
   }
   tr td {
@@ -27,10 +23,10 @@ table {
      
   }
   th{
-      width: 100px;
       font-size: 18px;
       color: white;
       font-weight:lighter;
+      text-align: left;
       padding: 10px;
       
   }

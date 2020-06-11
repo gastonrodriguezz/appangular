@@ -1,0 +1,17 @@
+<h2>Ventas Mensuales 2020 por Sucursales</h2>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Sucursales / Meses</th>
+            <th *ngFor="let mes of this.Meses">{{mes.nombre}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sucursal of this.listadoSucursales; let i = index">
+            <td>{{ sucursal.nombre }}</td>
+            <td *ngFor="let mes of this.Meses; let x = index"> {{ sucursal.getVentasMes(x) }}</td>
+        </tr>
+    </tbody>
+</table>

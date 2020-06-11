@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListadoClientesComponent } from './body/listado-clientes/listado-clientes.component';
+import { ListadoclientesComponent } from './body/listadoclientes/listadoclientes.component';
 import { TablaComponent } from './tabla/tabla.component';
-import { ListaSucursalComponent } from './body/lista-sucursal/lista-sucursal.component';
+import { ListadosucursalesComponent } from './body/listadosucursales/listadosucursales.component';
 import { ArbolNavidadComponent } from './body/arbol-navidad/arbol-navidad.component';
 
 @NgModule({
@@ -17,9 +17,9 @@ import { ArbolNavidadComponent } from './body/arbol-navidad/arbol-navidad.compon
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    ListadoClientesComponent,
+    ListadoclientesComponent,
     TablaComponent,
-    ListaSucursalComponent,
+    ListadosucursalesComponent,
     ArbolNavidadComponent,
   ],
   imports: [
