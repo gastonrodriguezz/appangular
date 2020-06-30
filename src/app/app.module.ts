@@ -7,9 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListadoclientesComponent } from './body/listadoclientes/listadoclientes.component';
-import { TablaComponent } from './tabla/tabla.component';
+import { TablaComponent } from './body/tabla/tabla.component';
 import { ListadosucursalesComponent } from './body/listadosucursales/listadosucursales.component';
 import { ArbolNavidadComponent } from './body/arbol-navidad/arbol-navidad.component';
+
 
 @NgModule({
   declarations: [
@@ -21,10 +22,12 @@ import { ArbolNavidadComponent } from './body/arbol-navidad/arbol-navidad.compon
     TablaComponent,
     ListadosucursalesComponent,
     ArbolNavidadComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
